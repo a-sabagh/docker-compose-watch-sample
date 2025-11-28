@@ -8,4 +8,11 @@ services:
       watch:
         - action: sync
           path: ./src
+          initial_sync: true
           target: /app/src
+          ignore:
+            - must_be_ignore
+        # - action: sync+restart
+        - action: rebuild
+          path: ./etc
+          target: /app/etc
