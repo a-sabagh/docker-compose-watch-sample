@@ -2,6 +2,7 @@ services:
   debian:
     build:
       context: .
+    # command: ["ls", "-la"]
     stdin_open: true
     tty: true
     develop:

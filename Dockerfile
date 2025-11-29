@@ -8,4 +8,4 @@ WORKDIR /app
 
 # RUN apt update && apt install -y procps
 
-CMD [ "bash" ]
+# CMD [ "bash", "-c", "pwd && ls -la && bash" ]
